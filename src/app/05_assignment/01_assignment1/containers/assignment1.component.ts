@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {ViewChild, ElementRef} from '@angular/core';
+
 
 @Component({
   selector: 'app-assignment1',
@@ -8,12 +8,11 @@ import {ViewChild, ElementRef} from '@angular/core';
 })
 export class Assignment1Component {
  //feilds
-  @ViewChild('inputText') text:ElementRef; 
   value:String;
 
 //method
-onKeydown(event:any):void{
-  this.value = this.text.nativeElement.value;
+onKeydown(inputText:HTMLInputElement):void{
+  this.value = inputText.value;
 }
 
 }
