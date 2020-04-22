@@ -9,7 +9,7 @@
     </ul>
     <div class="container your-code">
         <h6>Enter the text here:</h6>
-        <input type="text" #inputText (keydown)="onKeydown(inputText)" placeholder="Text Here" class="inputFeild">
+        <input type="text" #inputText (input)="onInput(inputText)" placeholder="Text Here" class="inputFeild">
         <h6>{{ value }}</h6>
     </div>
 </div>

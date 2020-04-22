@@ -11,7 +11,7 @@ export class Assignment1Component {
   value:String;
 
 //method
-onKeydown(inputText:HTMLInputElement):void{
+onInput(inputText:HTMLInputElement):void{
   this.value = inputText.value;
 }
 
