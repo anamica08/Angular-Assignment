@@ -21,7 +21,12 @@
                 </tr>
             </thead>
             <tbody id='tbody'>
-
+                <tr *ngFor="let todo of todoList" [ngClass]="{active: todo === selectedTodo}" (click)="selectTodo(todo)">
+                    <td>{{ todo.id }}</td>
+                    <td>{{ todo.type }}</td>
+                    <td>{{ todo.description }}</td>
+                    <td>{{ todo.completed }}</td>
+                </tr>
             </tbody>
         </table>
         <!--Table ending here.-->

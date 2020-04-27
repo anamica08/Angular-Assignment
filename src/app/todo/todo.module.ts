@@ -9,6 +9,8 @@ import { TodoNewComponent } from './todo-new/todo-new.component';
 import { TodoRoutingModule } from './todo-routing.module';
 import { TodoService } from './services/todo.service';
 
+
+
 @NgModule({
   declarations: [
     TodoComponent,
@@ -20,7 +22,8 @@ import { TodoService } from './services/todo.service';
     CommonModule,
     HttpClientModule,
     ReactiveFormsModule,
-    TodoRoutingModule
+    TodoRoutingModule,
+  
   ],
   providers: [
     TodoService
